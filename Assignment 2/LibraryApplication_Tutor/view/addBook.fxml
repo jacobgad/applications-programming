@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10" alignment="center" fx:controller="controller.AddBookController">
+    <GridPane vgap="10.0" >
+        <Label text="Title: " GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="bookTitle"/>
+        <Label text="Author: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="bookAuthor"/>
+        <Label text="Genre: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="bookGenre"/>  
+    </GridPane>
+    <Text fx:id="feedback" styleClass="feedbackTxt"/>
+   
+        <Button text="Add Book" onAction="#handleAddB"/>
+        <Button text="Close" onAction="#exitSystem"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

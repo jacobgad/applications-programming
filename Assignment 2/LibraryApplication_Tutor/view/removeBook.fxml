@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10" fx:controller="controller.RemoveBookController">
+    <ListView fx:id="booksLv" items="${controller.catalogue.allBooks}" prefHeight="500" prefWidth="300"/>
+    <Button text="Remove Book"  disable="true" onAction="#handleRemoveB" fx:id="removeBButton"/>
+    <Button text="Close" onAction="#exitSystem"/>
+    
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

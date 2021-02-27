@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Input
+comment0.text=\r\n\ The\ Input\ class\ provides\ a\ set\ of\ static\ methods\ for\ easily\ asking\r\n\ the\ user\ questions\ and\ reading\ their\ answers.\r\n
+comment1.params=
+comment1.target=Input()
+comment2.params=question
+comment2.target=java.lang.String\ askString(java.lang.String)
+comment2.text=\r\n\ Asks\ the\ user\ the\ given\ question,\ waits\ for\ the\ user\ to\ enter\ a\ string\r\n\ at\ the\ keyboard,\ and\ then\ returns\ this\ string.\r\n\r\n\ @param\ question\ the\ question\ to\ be\ printed\r\n\ @return\ the\ string\ that\ the\ user\ entered\ as\ an\ answer\ to\ the\ question\r\n
+comment3.params=question
+comment3.target=int\ askInt(java.lang.String)
+comment3.text=\r\n\ Asks\ the\ user\ the\ given\ question,\ waits\ for\ the\ user\ to\ enter\ a\ integer\r\n\ at\ the\ keyboard,\ and\ then\ returns\ this\ integer.\r\n\r\n\ @param\ question\ the\ question\ to\ be\ printed\r\n\ @return\ the\ integer\ that\ the\ user\ entered\ as\ an\ answer\ to\ the\ question\r\n
+comment4.params=question
+comment4.target=double\ askDouble(java.lang.String)
+comment4.text=\r\n\ Asks\ the\ user\ the\ given\ question,\ waits\ for\ the\ user\ to\ enter\ a\ double\r\n\ at\ the\ keyboard,\ and\ then\ returns\ this\ double.\r\n\r\n\ @param\ question\ the\ question\ to\ be\ printed\r\n\ @return\ the\ double\ that\ the\ user\ entered\ as\ an\ answer\ to\ the\ question\r\n
+comment5.params=question
+comment5.target=char\ askChar(java.lang.String)
+comment5.text=\r\n\ Asks\ the\ user\ the\ given\ question,\ waits\ for\ the\ user\ to\ enter\ a\r\n\ single\ character\ at\ the\ keyboard,\ and\ then\ returns\ this\ character.\r\n\r\n\ @param\ question\ the\ question\ to\ be\ printed\r\n\ @return\ the\ character\ that\ the\ user\ entered\ as\ an\ answer\ to\ the\ question\r\n
+comment6.params=question
+comment6.target=boolean\ askBoolean(java.lang.String)
+comment6.text=\r\n\ Asks\ the\ user\ the\ given\ question,\ waits\ for\ the\ user\ to\ enter\ a\ boolean\r\n\ at\ the\ keyboard,\ and\ then\ returns\ this\ boolean.\r\n\r\n\ @param\ question\ the\ question\ to\ be\ printed\r\n\ @return\ the\ boolean\ that\ the\ user\ entered\ as\ an\ answer\ to\ the\ question\r\n
+numComments=7

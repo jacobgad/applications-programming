@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.FavouriteMoviesController"
+      alignment="center" spacing="10"
+      styleClass="root"
+      prefWidth="800.0">
+
+    <HBox alignment="center_left" spacing="10">
+       <ImageView>
+           <image>
+               <Image url="@movie_icon.png"/>
+           </image>
+       </ImageView>
+       <Text text="Favourite Movies" styleClass="h1"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        <Label text="Customer ID:"/>
+        <TextField text="" fx:id="customerIDTxtFld"/>
+        <Button text="Select Customer" fx:id="selectCustomerBtn" onAction="#handleCustomerSelect"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        <Text text="" fx:id="customerSelectTxt"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        <Text text="Favourite Movies" styleClass="h2"/>
+    </HBox>
+    
+    <TableView fx:id="favMoviesTv" prefWidth="800.0" prefHeight="225.0"> 
+        <placeholder><Label text="No results found."/></placeholder>
+        <columns>
+            <TableColumn text="Title">
+                <cellValueFactory><PropertyValueFactory property="title"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Year">
+                <cellValueFactory><PropertyValueFactory property="year"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Genre">
+                <cellValueFactory><PropertyValueFactory property="genre"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory><PropertyValueFactory property="price"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    
+    <HBox alignment="center" spacing="10">
+        <Button text="Close"  fx:id="closeBtn" onAction="#handleClose"/>
+    </HBox>
+    
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+</VBox>

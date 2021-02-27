@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+        fx:controller="controller.ShowAvailableMoviesController"
+      alignment="center" spacing="10"
+      styleClass="root"
+      prefWidth="800.0">
+
+    <HBox alignment="center_left" spacing="10">
+       <ImageView>
+           <image>
+               <Image url="@movie_icon.png"/>
+           </image>
+       </ImageView>
+       <Text text="Available Movies" styleClass="h1"/>
+    </HBox>
+    
+    <TableView fx:id="moviesTv" items="${controller.kiosk.catalogue.availableMovies}" prefWidth="800.0" prefHeight="400.0" >
+        <placeholder><Label text="No results found."/></placeholder>       
+        <columns>
+            <TableColumn text="Title">
+                <cellValueFactory><PropertyValueFactory property="title"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Year">
+                <cellValueFactory><PropertyValueFactory property="year"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Genre">
+                <cellValueFactory><PropertyValueFactory property="genre"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory><PropertyValueFactory property="price"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    
+    <HBox alignment="center" spacing="10">
+        <Button text="Exit"  fx:id="exitBtn" onAction="#handleExit"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>

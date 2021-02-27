@@ -1,0 +1,22 @@
+[5] The Main menu window is at least partially done.
+[5] The Main menu window is done.
+[2] The Administration menu window is at least partially done.
+[3] The Administration menu window is done.
+[2] The Catalogue menu window is at least partially done.
+[3] The Catalogue menu window is done.
+[5] The Add Patron and Book windows are at least partially done.
+[5] The Add Patron and Book windows are done.
+[5] The Remove Patron and Book windows are at least partially done.
+[5] The Remove Patron and Book windows are done.
+[5] The Patron Record and Patron Favourites windows are at least partially done.
+[5] The Patron Record and Patron Favourites windows are done.
+[5] The Show All Books and Show Available Books windows are at least partially done.
+[5] The Show All Books and Show Available Books windows are done.
+[5] The Show By Genre and By Author windows are at least partially done.
+[5] The Show By Genre and By Author windows are done.
+[5] The Borrow window is at least partially done.
+[5] The Borrow window is done.
+[5] The Return window is at least partially done.
+[5] The Return window is done.
+[5] The Place Hold window is at least partially done.
+[5] The Place Hold window is done.

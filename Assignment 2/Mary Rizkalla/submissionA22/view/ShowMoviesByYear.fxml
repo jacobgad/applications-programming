@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.ShowMoviesByYearController"
+      alignment="center" spacing="10"
+      styleClass="root"
+      prefWidth="800.0">
+
+    <HBox alignment="center_left" spacing="10">
+       <ImageView>
+           <image>
+               <Image url="@movie_icon.png"/>
+           </image>
+       </ImageView>
+       <Text text="Movies By Year" styleClass="h1"/>
+    </HBox>
+    
+    <GridPane alignment="center" hgap="10" vgap="10">
+        <Label text="Years:"  fx:id="yearsLbl" styleClass="h2" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Movies:"  fx:id="moviesLbl" styleClass="h2" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <ListView items="${controller.kiosk.catalogue.years}" fx:id="yearsLv" prefWidth="200.0" prefHeight="350.0" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TableView fx:id="moviesTv" prefWidth="600.0" prefHeight="350.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <placeholder><Label text="No results found."/></placeholder>        
+            <columns>
+                <TableColumn text="Title">
+                    <cellValueFactory><PropertyValueFactory property="title"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Year">
+                    <cellValueFactory><PropertyValueFactory property="year"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Genre">
+                    <cellValueFactory><PropertyValueFactory property="genre"/></cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Price">
+                    <cellValueFactory><PropertyValueFactory property="price"/></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <Button text="Display Movies"  fx:id="displayMoviesBtn" onAction="#handleDisplayMovies" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    </GridPane>
+    
+    <HBox alignment="center" spacing="10">
+        <Button text="Exit"  fx:id="exitBtn" onAction="#handleExit"/>
+    </HBox>
+  
+    <stylesheets>
+        <URL value="@kiosk.css"/>
+    </stylesheets>
+
+</VBox>

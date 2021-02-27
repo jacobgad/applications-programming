@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Store
+comment0.text=\r\n\ The\ store\ has\ and\ sells\ one\ product\:\ Sticky\ tape.\r\n\r\n\ You\ can\ sell\ and\ restock\ a\ product,\ view\ stock\ and\ view\ cash.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=
+comment10.target=int\ readQty()
+comment2.params=
+comment2.target=Store()
+comment3.params=
+comment3.target=void\ use()
+comment4.params=
+comment4.target=void\ sell()
+comment5.params=
+comment5.target=void\ restock()
+comment6.params=
+comment6.target=void\ viewStock()
+comment7.params=
+comment7.target=void\ viewCash()
+comment8.params=
+comment8.target=void\ help()
+comment9.params=
+comment9.target=char\ readChoice()
+numComments=11

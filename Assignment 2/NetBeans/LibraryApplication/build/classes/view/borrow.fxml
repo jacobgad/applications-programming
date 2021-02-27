@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+    fx:controller="controller.BorrowController"
+    alignment="center" spacing="10" 
+    styleClass="root">
+
+    <HBox alignment="center_left" spacing="10">
+        <Label text= "Patron ID:" styleClass="label"/>
+        <TextField text="" fx:id="patronIDTxtFld" onKeyReleased="#keyReleasedProperty"/>
+        <Button text="Select Patron" fx:id="selectPatronBtn" onAction="#handleSelectPatron"/>
+    </HBox>
+
+    <Label text= "Avalable Books:" styleClass="lable"/>
+    <ListView fx:id="avalableBooksLv" prefWidth="400.0" prefHeight="100.0" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Borrow Selected Book" fx:id="borrowBookBtn" disable="true" onAction="#handleBorrowBook"/>
+    <Button text="Close" styleClass="button" onAction="#handleClose"/>
+   
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=BankAccount
+comment0.text=\r\n\ Each\ bank\ account\ has\ an\ account\ name\ and\ a\ balance,\ and\ provides\r\n\ methods\ to\ access\ and\ manipulate\ the\ balance\ of\ that\ account.\r\n
+comment1.params=
+comment1.target=BankAccount()
+comment1.text=\r\n\ Creates\ a\ new\ bank\ account,\ asking\ the\ user\ to\ enter\ the\r\n\ account\ name\ and\ initial\ balance.\r\n
+comment2.params=
+comment2.target=void\ showBalance()
+comment2.text=\r\n\ Shows\ the\ balance\ of\ this\ account.\r\n
+comment3.params=amount
+comment3.target=void\ deposit(double)
+comment3.text=\r\n\ Deposits\ the\ specified\ amount\ of\ money\ into\ this\ account.\r\n
+comment4.params=amount
+comment4.target=void\ withdraw(double)
+comment4.text=\r\n\ Withdraws\ the\ specified\ amount\ of\ money\ into\ this\ account.\r\n
+comment5.params=amount\ targetAccount
+comment5.target=void\ transfer(double,\ BankAccount)
+comment5.text=\r\n\ Transfers\ the\ specified\ amount\ of\ money\ from\ this\ account\ into\r\n\ the\ target\ account.\r\n
+comment6.params=
+comment6.target=double\ getBalance()
+comment6.text=\r\n\ Gets\ the\ balance\ of\ this\ account.\r\n\r\n\ @return\ the\ balance\ of\ this\ account\r\n
+numComments=7

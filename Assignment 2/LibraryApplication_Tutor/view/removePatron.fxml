@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="center" spacing="10" fx:controller="controller.RemovePatronController">
+    <ListView fx:id="patronsLv" items="${controller.library.patrons}" prefHeight="500" prefWidth="300"  />
+    <Button text="Remove Patron" disable="true" onAction="#handleRemoveP" fx:id="removePButton"/>
+    <Button text="Close" onAction="#exitSystem"/>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

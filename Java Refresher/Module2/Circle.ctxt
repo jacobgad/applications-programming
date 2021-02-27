@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Circle
+comment0.text=\r\n\ Each\ Circle\ object\ represents\ a\ perfectly\ round\ 2-dimensional\ shape.\r\n
+comment1.params=radius
+comment1.target=Circle(double)
+comment1.text=\r\n\ Creates\ a\ new\ Circle\ with\ the\ given\ radius.\r\n\r\n\ @param\ radius\ the\ radius\ specifying\ half\ the\ width\ of\ the\ new\ circle\r\n
+comment2.params=
+comment2.target=void\ showArea()
+comment2.text=\r\n\ Prints\ the\ area\ of\ this\ circle\ to\ the\ terminal.\r\n
+comment3.params=
+comment3.target=double\ calculateArea()
+comment3.text=\r\n\ Calculates\ and\ returns\ the\ area\ of\ this\ circle.\r\n\r\n\ @return\ the\ circle's\ area\r\n
+numComments=4

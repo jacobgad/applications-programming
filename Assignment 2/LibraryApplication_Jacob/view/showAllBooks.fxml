@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+    fx:controller="controller.ShowAllBooksController"
+    alignment="center" spacing="10" 
+    styleClass="root">
+
+    <TableView fx:id="booksTv" items="${controller.library.catalogue.allBooks}" prefWidth="300.0" prefHeight="500.0" >
+        <columnResizePolicy><TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/></columnResizePolicy>
+        <placeholder><Label text="No Books in Catalgoue"/></placeholder>        
+        <columns>
+            <TableColumn text="Title">
+                <cellValueFactory><PropertyValueFactory property="title"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Author">
+                <cellValueFactory><PropertyValueFactory property="author"/></cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Genre">
+                <cellValueFactory><PropertyValueFactory property="genre"/></cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button text="Close" fx:id="closeBtn" onAction="#handleClose"/>
+    
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

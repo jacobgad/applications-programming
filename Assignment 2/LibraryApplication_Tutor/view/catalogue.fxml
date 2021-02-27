@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="controller.CatalogueController" spacing="10" alignment="center" styleClass="root">
+    <HBox spacing="10" alignment="CENTER" styleClass="header">
+        <ImageView>
+            <image><Image url="@UTS.png"/></image>
+        </ImageView>
+        <Text text="Library System" styleClass="heading"/>
+    </HBox>
+    <VBox alignment="center" spacing="20" styleClass="footer">
+        <Button text="All Books" onAction="#handleAllB"/>
+        <Button text="Available Books" onAction="#handleAvailableB"/>
+        <Button text="Books By Genre" onAction="#handleBBGenre"/>
+        <Button text="Books By Author" onAction="#handleBBAuthor"/>
+        <Button text="Borrow Books" onAction="#handleBorrowBook"/>
+        <Button text="Return Books" onAction="#handleReturnBook"/>
+        <Button text="Place Hold" onAction="#handlePlaceHold"/>
+        <Button text="Exit Catalogue" onAction="#exitSystem"/>
+    </VBox>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

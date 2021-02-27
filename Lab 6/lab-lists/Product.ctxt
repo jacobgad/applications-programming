@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Product
+comment1.params=name\ stock\ price
+comment1.target=Product(java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment4.params=n
+comment4.target=boolean\ has(int)
+comment4.text=\r\n\ Return\ true\ iff\ this\ product\ has\ at\ least\ n\ stock\r\n
+comment5.params=n
+comment5.target=double\ sell(int)
+comment5.text=\r\n\ Sell\ n\ stock\ of\ this\ product\ (decrease\ stock\ by\ n)\r\n\ and\ return\ the\ amount\ of\ money\ earned\ (price\ *\ n)\r\n
+comment6.params=n
+comment6.target=void\ restock(int)
+comment6.text=\r\n\ Increase\ stock\ by\ n.\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=money
+comment8.target=java.lang.String\ formatted(double)
+numComments=9

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Input
+comment1.params=question
+comment1.target=java.lang.String\ askString(java.lang.String)
+comment2.params=question
+comment2.target=int\ askInt(java.lang.String)
+comment3.params=question
+comment3.target=double\ askDouble(java.lang.String)
+comment4.params=question
+comment4.target=char\ askChar(java.lang.String)
+comment5.params=question
+comment5.target=boolean\ askBoolean(java.lang.String)
+numComments=6
