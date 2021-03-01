@@ -13,10 +13,10 @@
         {
             "type": "java",
             "name": "Launch LibraryApplication",
-            "vmArgs": "--module-path C:/Users/jacob/Documents/vscode/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
             "request": "launch",
+            "vmArgs": "--module-path C:/Users/Jacob/Documents/vscode/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml", 
             "mainClass": "LibraryApplication",
-            "projectName": "Library_a2977361"
+            "projectName": "Library_84ba2c68"
         }
     ]
 }
