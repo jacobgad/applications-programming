@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import model.Library;
+import javafx.application.Platform;
 
 public class LibraryController extends Controller<Library> {
 
@@ -33,7 +34,7 @@ public class LibraryController extends Controller<Library> {
     }
     
     public void handleExit(ActionEvent event){
-        stage.close();
+        Platform.exit();
     }
 
 }
